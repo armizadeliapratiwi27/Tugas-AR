@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rumah 3D</title>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui="">
+        <!-- Latar Belakang -->
+        <a-sky color="#87CEEB" material="" geometry="" position="0 -0.09 0"></a-sky>
+    
+        <!-- Tanah -->
+        <a-plane rotation="-90 0 0" width="100" height="100" color="#C0C0C0" material="" geometry=""></a-plane>
+    
+        <!-- Rumah -->
+        <a-entity position="">
+          <!-- Pondasi -->
+          <a-box position="0 0.5 0" width="10" height="1" depth="8" color="#CD853F" material="color: #007508" geometry="" scale="1.18 0.95 1.22">
+            <a-text value="Pondasi" align="center" color="#FFFFFF" scale="1 1 1.5" position="0 0.11096 4.1981" text=""></a-text>
+          </a-box><a-box position="-0.02 -0.25 4.46507" width="10" height="1" depth="8" color="#CD853F" material="color: #496e4c" geometry="" scale="1.18 0.95 1.22" rotation="">
+            <a-text value="Pondasi" align="center" color="#FFFFFF" scale="1 1 1.5" position="0 1 0" text=""></a-text>
+          </a-box>
+    
+          <!-- Dinding -->
+          <a-box position="0 3.14 0" width="10" height="7" depth="8" color="#B0E0E6" material="color: #a400f0" geometry="">
+            <a-text value="Dinding" align="center" color="#000000" scale="1 1 1.5" position="0 2.50022 4.54481" text=""></a-text>
+          </a-box>
+    
+          <!-- Teras Depan -->
+          <a-box position="-4.0752 0.25 2.30528" width="12" height="0.5" depth="3" color="#CD853F" material="" geometry="" rotation="0 0 -90" scale="1.08 1 0.12">
+            <a-text value="Teras Depan" align="center" color="#FFFFFF" scale="1 1 1.5" position="-2.86087 0.01225 55.26" text="value: Tiang" rotation="0 0 90"></a-text>
+          </a-box><a-box position="4.075 0.25 0.615" width="12" height="0.5" depth="3" color="#CD853F" material="" geometry="" rotation="0 0 -90" scale="1.08 1 0.12">
+            <a-text value="Teras Depan" align="center" color="#FFFFFF" scale="1 1 1.5" position="0 0.25 0" text=""></a-text>
+          </a-box>
+
+          <!-- Teras Belakang -->
+          <a-box position="-4.09 -0.25 8.43866" width="12" height="0.5" depth="3" color="#CD853F" material="color: #994a00" geometry="" scale="0.08 -8.68 0.28">
+            <a-text value="Teras Belakang" align="center" color="#FFFFFF" scale="1 1 1.5" position="0 0.25 0" text=""></a-text>
+          </a-box><a-box position="4.09 -0.25 8.43866" width="12" height="0.5" depth="3" color="#CD853F" material="color: #994a00" geometry="" scale="0.08 -8.68 0.28">
+            <a-text value="Teras Belakang" align="center" color="#FFFFFF" scale="1 1 1.5" position="0 0.25 0" text=""></a-text>
+          </a-box>
+
+          <!-- Garasi -->
+          <a-box position="-0.01247 6.54 6.56596" width="3" height="3" depth="5" color="#CD853F" material="color: #007002" geometry="" scale="2.91 0.14 1.37">
+            <a-text value="Garasi" align="center" color="#FFFFFF" scale="1 1 1.5" position="0 1 0" text=""></a-text>
+          </a-box>
+    
+          <!-- Atap -->
+          <a-entity position="0 8.5 0">
+            <!-- Bagian bawah atap -->
+            <a-box position="-2.955 -0.32057 0.405" width="10" height="1" depth="8" color="#CD5C5C" material="color: #008a09" geometry="" rotation="0 0 40" scale="0.83 0.48 1.35">
+              <a-text value="Atap" align="center" color="#FFFFFF" scale="1 1 1.5" position="-0.21 -0.05 4.59" text=""></a-text>
+            </a-box>
+            <a-box position="3.18183 -0.25767 0.40545" width="10" height="1" depth="8" color="#CD5C5C" material="color: #008a09" geometry="" rotation="0 0 -40" scale="0.83 0.48 1.35">
+              <a-text value="Atap" align="center" color="#FFFFFF" scale="1 1 1.5" position="0.21 -0.05 4.59" text=""></a-text>
+            </a-box>
+            <!-- Bagian atas atap -->
+            <a-triangle position="0.047 -2.008 -3.61" vertex-a="-5 0 4" vertex-b="5 0 4" vertex-c="0 0 0" color="#CD5C5C" material="" geometry="vertexC: 0 100 0" rotation="0 -180 0" scale="1 0.043 0.097">
+              <a-text value="Atap" align="center" color="#FFFFFF" scale="1 1 1.5" position="0 1 0" text=""></a-text>
+            </a-triangle>
+            <a-triangle position="0.09661 -1.898 3.62433" vertex-a="-5 0 4" vertex-b="5 0 4" vertex-c="0 0 0" color="#CD5C5C" material="color: #c28347" geometry="vertexC: 0 100 0" rotation="" scale="1 0.043 0.097">
+              <a-text value="Atap" align="center" color="#FFFFFF" scale="1 1 1.5" position="0 1 -47.41533" text=""></a-text>
+            </a-triangle>
+          </a-entity>
+    
+          <!-- Jendela -->
+          <a-entity position="-3 4.01 4">
+            <a-box width="3" height="3" depth="0.1" color="#808080" material="color: #ffffff" geometry="" scale="0.65 1 1">
+              <a-text value="Jendela" align="center" color="#000000" scale="1 1 1.5" position="0 0.63 0.51" text=""></a-text>
+            </a-box><a-box width="3" height="3" depth="0.1" color="#808080" material="color: #ffffff" geometry="" scale="0.65 1 1" rotation="0 -90 0" position="-1.97 -0.09 -4.01">
+              <a-text value="Jendela" align="center" color="#000000" scale="1 1 1.5" position="0 1.5 0" text=""></a-text>
+            </a-box>
+            
+            
+          </a-entity>
+          <a-entity position="3 4.01 4">
+            <a-box width="3" height="3" depth="0.1" color="#808080" material="color: #ffffff" geometry="" rotation="0 -180 0" scale="0.65 1 1">
+              <a-text value="Jendela" align="center" color="#000000" scale="1 1 1.5" position="0 0.61 -0.2" text="" rotation="0 180 0"></a-text>
+            </a-box><a-box width="3" height="3" depth="0.1" color="#808080" material="color: #ffffff" geometry="" rotation="0 90 0" scale="0.65 1 1" position="1.97 -0.09 -4.01">
+              <a-text value="Jendela" align="center" color="#000000" scale="1 1 1.5" position="0 1.5 0" text="" rotation=""></a-text>
+            </a-box>
+            
+            
+          </a-entity>
+    
+          <!-- Pintu -->
+          <a-box width="2" height="3" depth="0.1" color="#8B0000" position="0 2.17 4.05" material="" geometry="" rotation="" scale="1.08 1.87 0.34">
+            <a-text value="Pintu" align="center" color="#FFFFFF" scale="1 1 1.5" position="0 0.81 0.52" text=""></a-text><a-text value="Pintu" align="center" color="#FFFFFF" scale="1 1 1.5" position="0 -0.25 0.52" text="value: 2113025039"></a-text><a-text value="Pintu" align="center" color="#FFFFFF" scale="1.09 0.77 0.79" position="0 -0.01 0.36" text="value: ARMIZA ADELIA PRATIWI; color: #000000"></a-text>
+          </a-box>
+
+          <!-- Objek Bulat (Tiang) -->
+          <a-cylinder position="-4.04 2.74 8.47" radius="0.2" height="6" color="#8B4513" material="" geometry="" scale="1 1.28 1"></a-cylinder><a-cylinder position="4.04 2.74 8.47" radius="0.2" height="6" color="#8B4513" material="" geometry="" scale="1 1.28 1"></a-cylinder>
+        </a-entity>
+    
+        <!-- Kamera -->
+        <a-entity camera="" position="7.914584077794586 4.150387329270673 7.670888575783805" rotation="15.813635145610728 34.37746770784941 0" look-controls="" wasd-controls="fly: true" data-aframe-inspector-original-camera=""></a-entity>
+      <div class="a-loader-title" style="display: none;">Visualisasi Rumah 3D</div></a-scene>
+</body>
+</html>
